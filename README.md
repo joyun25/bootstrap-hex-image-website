@@ -4,6 +4,8 @@
 ![](https://i.imgur.com/Tc2w6ff.jpg)
 #### 功能：
 - 一頁式網站
+- 登入、註冊 彈出式視窗
+- RWD
 #### 使用技術：
 - [Bootstrap5](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 #### 第三方插件：
