@@ -5,6 +5,7 @@
 #### 功能：
 - 一頁式網站
 - 登入、註冊 彈出式視窗
+- 基本表單驗證
 - RWD
 #### 使用技術：
 - [Bootstrap5](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
