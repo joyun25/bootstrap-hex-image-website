@@ -331,28 +331,6 @@
                             <button type="submit" class="btn btn-primary">送出</button>
                         </div>
                     </form>
-                    <script>
-                        // Example starter JavaScript for disabling form submissions if there are invalid fields
-                        (function () {
-                        'use strict'
-
-                        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                        var forms = document.querySelectorAll('.needs-validation')
-
-                        // Loop over them and prevent submission
-                        Array.prototype.slice.call(forms)
-                            .forEach(function (form) {
-                            form.addEventListener('submit', function (event) {
-                                if (!form.checkValidity()) {
-                                event.preventDefault()
-                                event.stopPropagation()
-                                }
-
-                                form.classList.add('was-validated')
-                            }, false)
-                            })
-                        })()
-                    </script>
                 </div>
             </div>
         </div>
@@ -395,46 +373,58 @@
     </footer>
 
     <!-- modal -->
-    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header bg-primary text-white">
-                    <h5 class="modal-title" id="exampleModalLabel">登入</h5>
+                    <h5 class="modal-title" id="loginModalLabel">登入</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form>
+                <form action="index.html" class="needs-validation" novalidate>
                     <div class="modal-body">
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                            <div id="emailHelp" class="form-text">我們絕不會隨意將你的email給予第三者</div>
+                        <div class="mb-3 form-group position-relative">
+                            <label for="loginInputEmail1" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="loginInputEmail1" aria-describedby="loginEmail" placeholder="Enter email" required>
+                            <div id="loginEmail" class="form-text">我們絕不會隨意將你的email給予第三者</div>
+                            <div class="valid-tooltip">
+                                完成
+                            </div>
+                            <div class="invalid-tooltip">
+                                請填寫電子信箱
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">密碼</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        <div class="mb-3 form-group position-relative">
+                            <label for="loginInputPassword1" class="form-label">密碼</label>
+                            <input type="password" class="form-control" id="loginInputPassword1" placeholder="Password" required>
+                            <div class="valid-tooltip">
+                                完成
+                            </div>
+                            <div class="invalid-tooltip">
+                                請填寫密碼
+                            </div>
                         </div>
                         <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">記住帳號</label>
+                            <input type="checkbox" class="form-check-input" id="loginCheck1">
+                            <label class="form-check-label" for="loginCheck1">記住帳號</label>
                         </div>
                     </div>
                     <div class="modal-footer">
                         <a href="#" class="me-auto" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#registerModal">還沒有帳號？</a>
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
-                        <button type="button" class="btn btn-primary">登入</button>
+                        <button type="submit" class="btn btn-primary">登入</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
-    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header bg-warning text-white">
-                    <h5 class="modal-title" id="exampleModalLabel">註冊</h5>
+                    <h5 class="modal-title" id="registerModalLabel">註冊</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form>
+                <form class="needs-validation" novalidate>
                     <div class="modal-body">
                         <div class="row">
                             <div class="col-sm-6 text-secondary">
@@ -443,22 +433,46 @@
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nisi doloribus qui magni, laudantium beatae cumque laboriosam, harum sapiente reprehenderit, vel accusamus. Unde doloremque, itaque, iste, provident illo modi inventore repellendus iure vero eveniet alias dolore amet maiores nisi mollitia.</p>
                             </div>
                             <div class="col-sm-6">
-                                <div class="mb-3">
-                                    <label for="exampleInputEmail1" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                    <div id="emailHelp" class="form-text">我們絕不會隨意將你的email給予第三者</div>
+                                <div class="mb-3 form-group position-relative">
+                                    <label for="registerInputEmail1" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="registerInputEmail1" aria-describedby="registerEmail" placeholder="Enter email" required>
+                                    <div id="registerEmail" class="form-text">我們絕不會隨意將你的email給予第三者</div>
+                                    <div class="valid-tooltip">
+                                        完成
+                                    </div>
+                                    <div class="invalid-tooltip">
+                                        請填寫電子信箱
+                                    </div>
                                 </div>
-                                <div class="mb-3">
-                                    <label for="exampleInputPassword1" class="form-label">密碼</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                <div class="mb-3 form-group position-relative">
+                                    <label for="registerInputPassword1" class="form-label">密碼</label>
+                                    <input type="password" class="form-control" id="registerInputPassword1" placeholder="Password" required>
+                                    <div class="valid-tooltip">
+                                        完成
+                                    </div>
+                                    <div class="invalid-tooltip">
+                                        請填寫密碼
+                                    </div>
                                 </div>
-                                <div class="mb-3">
-                                    <label for="exampleInputPassword1" class="form-label">確認密碼</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                <div class="mb-4 form-group position-relative">
+                                    <label for="registerInputPassword2" class="form-label">確認密碼</label>
+                                    <input type="password" class="form-control" id="registerInputPassword2" placeholder="Password" required>
+                                    <div class="valid-tooltip">
+                                        完成
+                                    </div>
+                                    <div class="invalid-tooltip">
+                                        請填寫密碼
+                                    </div>
                                 </div>
-                                <div class="mb-3 form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">同意條款</label>
+                                <div class="mb-3 form-check form-group position-relative">
+                                    <input type="checkbox" class="form-check-input" id="registerCheck1" required>
+                                    <label class="form-check-label" for="registerCheck1">同意條款</label>
+                                    <div class="valid-tooltip">
+                                        完成
+                                    </div>
+                                    <div class="invalid-tooltip">
+                                        請確認同意條款
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -466,7 +480,7 @@
                     <div class="modal-footer">
                         <a href="#" class="me-auto" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#loginModal">已經有帳號了？</a>
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
-                        <button type="button" class="btn btn-primary">註冊</button>
+                        <button type="submit" class="btn btn-primary">註冊</button>
                     </div>
                 </form>
             </div>
@@ -482,5 +496,27 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
     -->
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+            })
+        })()
+    </script>
 </body>
 </html>
