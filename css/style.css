@@ -1,0 +1,73 @@
+a {
+    text-decoration: none;
+}
+
+.logo {
+    background-image: url('../img/logo_w.svg');
+    width: 120px;
+    height: 24px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.btn {
+    border-width: 2px;
+}
+
+.header-carousel-item {
+    height: 450px;
+}
+
+.bg-cover {
+    background-size: cover;
+    background-position: center center;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.banner1 {
+    background-image: url('https://images.unsplash.com/photo-1492683513054-55277abccd99?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=');
+}
+
+.banner2 {
+    background-image: url('https://images.unsplash.com/photo-1497668512640-fcbd959e5338?dpr=2&auto=format&fit=crop&w=1500&h=1001&q=80&cs=tinysrgb&crop=');
+}
+
+.banner3 {
+    background-image: url('https://images.unsplash.com/photo-1453831362806-3d5577f014a4?dpr=2&auto=format&fit=crop&w=1500&h=1016&q=80&cs=tinysrgb&crop=');
+}
+
+.welcome-img {
+    background-image: url('https://images.unsplash.com/photo-1481185103603-1dc844ef51db?dpr=2&auto=format&fit=crop&w=1080&h=718&q=80&cs=tinysrgb&crop=');
+}
+
+.z-index-1 {
+    z-index: 1;
+}
+
+.z-index-2 {
+    z-index: 2;
+}
+
+.happy-img {
+    background-image: url('https://images.unsplash.com/photo-1498309313100-e308c8946b45?dpr=2&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop=');
+}
+
+.join-us-img {
+    background-image: url('https://images.unsplash.com/photo-1484834762280-66a18a5a8f0b?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=');
+}
+
+.taste-dishes-img {
+    background-image: url('https://images.unsplash.com/photo-1476029764343-569b983f5785?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=');
+}
+@media (min-width: 768px) {
+    .text-md-dark {
+        color: #333;
+    }
+}
+.form-control {
+    border-width: 2px;
+}
